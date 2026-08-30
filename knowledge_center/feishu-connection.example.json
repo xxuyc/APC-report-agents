@@ -1,0 +1,15 @@
+{
+  "provider": "lark_cli",
+  "identity": "bot",
+  "base_token": "your-base-token",
+  "base_url": "https://example.feishu.cn/base/your-base-token",
+  "table_ids": {
+    "projects": "table-id",
+    "sources": "table-id",
+    "knowledge": "table-id",
+    "metrics": "table-id",
+    "requirements": "table-id",
+    "runs": "table-id",
+    "changes": "table-id"
+  }
+}

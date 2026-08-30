@@ -1,0 +1,25 @@
+# Keep repository text files stable across Windows and other platforms.
+* text=auto
+
+*.py text eol=lf
+*.js text eol=lf
+*.mjs text eol=lf
+*.ts text eol=lf
+*.md text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+*.excalidraw text eol=lf
+*.toml text eol=lf
+*.sh text eol=lf
+
+# Office and media files are binary artifacts.
+*.docx binary
+*.xlsx binary
+*.xls binary
+*.pptx binary
+*.ppt binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary

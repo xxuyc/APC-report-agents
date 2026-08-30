@@ -1,0 +1,27 @@
+{
+  "base_name": "多项目知识中心",
+  "time_zone": "Asia/Shanghai",
+  "tables": [
+    {"name":"项目台账","fields":[
+      {"name":"项目ID","type":"text"},{"name":"项目名称","type":"text"},{"name":"项目别名","type":"text"},{"name":"项目类型","type":"text"},{"name":"报告类型","type":"text"},{"name":"处理工艺","type":"text"},{"name":"设计规模","type":"text"},{"name":"规模档位","type":"text"},{"name":"排放标准","type":"text"},{"name":"地域","type":"text"},{"name":"气候","type":"text"},{"name":"设备与成本边界","type":"text"},{"name":"允许复用范围","type":"text"},{"name":"复用状态","type":"select","multiple":false,"options":[{"name":"prohibited"},{"name":"internal_reference"},{"name":"named_reference"}]},{"name":"披露方式","type":"select","multiple":false,"options":[{"name":"named"},{"name":"anonymous"},{"name":"internal_only"}]},{"name":"状态","type":"select","multiple":false,"options":[{"name":"active"},{"name":"pending_confirmation"},{"name":"inactive"}]}
+    ]},
+    {"name":"资料与证据","fields":[
+      {"name":"资料ID","type":"text"},{"name":"项目ID","type":"text"},{"name":"文件名","type":"text"},{"name":"文件链接","type":"text","style":{"type":"url"}},{"name":"SHA-256","type":"text"},{"name":"来源用途","type":"text"},{"name":"版本","type":"text"},{"name":"复用状态","type":"select","multiple":false,"options":[{"name":"prohibited"},{"name":"internal_reference"},{"name":"named_reference"}]},{"name":"允许用途","type":"text"},{"name":"披露方式","type":"select","multiple":false,"options":[{"name":"named"},{"name":"anonymous"},{"name":"internal_only"}]},{"name":"证据定位","type":"text"},{"name":"状态","type":"select","multiple":false,"options":[{"name":"active"},{"name":"inactive"},{"name":"superseded"}]}
+    ]},
+    {"name":"知识条目","fields":[
+      {"name":"知识ID","type":"text"},{"name":"项目ID","type":"text"},{"name":"类型","type":"text"},{"name":"标题","type":"text"},{"name":"内容","type":"text"},{"name":"关键词","type":"text"},{"name":"允许用途","type":"text"},{"name":"复用状态","type":"select","multiple":false,"options":[{"name":"prohibited"},{"name":"internal_reference"},{"name":"named_reference"}]},{"name":"披露方式","type":"select","multiple":false,"options":[{"name":"named"},{"name":"anonymous"},{"name":"internal_only"}]},{"name":"来源ID","type":"text"},{"name":"状态","type":"select","multiple":false,"options":[{"name":"active"},{"name":"pending_review"},{"name":"inactive"},{"name":"superseded"}]},{"name":"版本","type":"text"},{"name":"运行ID","type":"text"}
+    ]},
+    {"name":"项目指标事实","fields":[
+      {"name":"项目ID","type":"text"},{"name":"指标ID","type":"text"},{"name":"指标名称","type":"text"},{"name":"值","type":"number","style":{"type":"plain","precision":4}},{"name":"单位","type":"text"},{"name":"统计周期","type":"text"},{"name":"时间粒度","type":"text"},{"name":"公式版本","type":"text"},{"name":"指标定义","type":"text"},{"name":"数据边界","type":"text"},{"name":"证据来源","type":"text"},{"name":"QA状态","type":"select","multiple":false,"options":[{"name":"passed"},{"name":"failed"},{"name":"pending"}]},{"name":"复用状态","type":"select","multiple":false,"options":[{"name":"prohibited"},{"name":"internal_reference"},{"name":"named_reference"}]},{"name":"允许用途","type":"text"},{"name":"披露方式","type":"select","multiple":false,"options":[{"name":"named"},{"name":"anonymous"},{"name":"internal_only"}]},{"name":"运行ID","type":"text"},{"name":"状态","type":"select","multiple":false,"options":[{"name":"active"},{"name":"inactive"},{"name":"superseded"}]}
+    ]},
+    {"name":"需求与反馈","fields":[
+      {"name":"记录ID","type":"text"},{"name":"项目ID","type":"text"},{"name":"类型","type":"text"},{"name":"内容","type":"text"},{"name":"系统方向","type":"text"},{"name":"关键输入","type":"text"},{"name":"表达偏好","type":"text"},{"name":"通用规则候选","type":"text"},{"name":"流程缺陷","type":"text"},{"name":"状态","type":"select","multiple":false,"options":[{"name":"active"},{"name":"pending_review"},{"name":"closed"}]}
+    ]},
+    {"name":"Agent运行","fields":[
+      {"name":"运行ID","type":"text"},{"name":"项目ID","type":"text"},{"name":"Agent类型","type":"text"},{"name":"状态","type":"text"},{"name":"参考项目","type":"text"},{"name":"检索意图","type":"text"},{"name":"知识快照SHA-256","type":"text"},{"name":"代码版本","type":"text"},{"name":"QA","type":"text"},{"name":"产物链接","type":"text"},{"name":"内容哈希","type":"text"},{"name":"更新时间","type":"updated_at","style":{"format":"yyyy-MM-dd HH:mm"}}
+    ]},
+    {"name":"知识变更","fields":[
+      {"name":"变更ID","type":"text"},{"name":"项目ID","type":"text"},{"name":"变更前","type":"text"},{"name":"变更后","type":"text"},{"name":"来源","type":"text"},{"name":"审批方式","type":"text"},{"name":"影响范围","type":"text"},{"name":"回归结果","type":"text"},{"name":"替代关系","type":"text"},{"name":"创建时间","type":"created_at","style":{"format":"yyyy-MM-dd HH:mm"}}
+    ]}
+  ]
+}

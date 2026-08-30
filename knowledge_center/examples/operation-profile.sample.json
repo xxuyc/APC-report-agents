@@ -1,0 +1,20 @@
+{
+  "project_name": "示例当前项目",
+  "analysis_year": 2025,
+  "period_label": "2025年度",
+  "report_mode": "both",
+  "cost_scope": {
+    "label": "电费及主要药剂成本",
+    "included_metrics": [
+      "electricity_cost_cny",
+      "pam_cost_cny",
+      "pac_cost_cny",
+      "acetate_cost_cny"
+    ]
+  },
+  "report_preferences": {
+    "allow_cross_plant_comparison": false,
+    "chart_axis_policy": "zero_baseline"
+  },
+  "approved_system_directions": []
+}

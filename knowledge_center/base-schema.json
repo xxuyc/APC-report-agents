@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "tables": {
+    "projects": {"display_name": "项目台账", "primary_key": ["project_id"]},
+    "sources": {"display_name": "资料与证据", "primary_key": ["source_id"]},
+    "knowledge": {"display_name": "知识条目", "primary_key": ["knowledge_id", "version"]},
+    "metrics": {"display_name": "项目指标事实", "primary_key": ["project_id", "metric_id", "period", "formula_version", "run_id"]},
+    "requirements": {"display_name": "需求与反馈", "primary_key": ["item_id"]},
+    "runs": {"display_name": "Agent运行", "primary_key": ["run_id", "agent_type", "content_hash"]},
+    "changes": {"display_name": "知识变更", "primary_key": ["change_id"]}
+  },
+  "enums": {
+    "reuse_status": ["prohibited", "internal_reference", "named_reference"],
+    "allowed_usages": ["writing", "method", "case", "numeric_comparison", "aggregation"],
+    "disclosure_mode": ["named", "anonymous", "internal_only"]
+  }
+}

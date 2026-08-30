@@ -1,0 +1,51 @@
+{
+  "projects": [
+    {
+      "project_id": "demo-current",
+      "project_name": "示例当前项目",
+      "aliases": ["当前厂"],
+      "project_type": "municipal_wastewater",
+      "report_types": ["generate-survey-report", "generate-operation-analysis-report"],
+      "process": "AAO",
+      "scale_band": "50k-100k-m3d",
+      "discharge_standard": "一级A",
+      "time_granularity": "daily",
+      "formula_version": "metrics-v1",
+      "equipment_boundary": "whole_plant",
+      "region": "华东",
+      "status": "active"
+    },
+    {
+      "project_id": "demo-history",
+      "project_name": "示例历史项目",
+      "project_type": "municipal_wastewater",
+      "report_types": ["generate-survey-report", "generate-operation-analysis-report"],
+      "process": "AAO",
+      "scale_band": "50k-100k-m3d",
+      "discharge_standard": "一级A",
+      "time_granularity": "daily",
+      "formula_version": "metrics-v1",
+      "equipment_boundary": "whole_plant",
+      "region": "华东",
+      "status": "active"
+    }
+  ],
+  "sources": [],
+  "knowledge": [
+    {
+      "knowledge_id": "kw-demo-writing",
+      "project_id": "demo-history",
+      "knowledge_type": "writing",
+      "title": "已审核现状章节写法",
+      "content": "先陈述证据范围，再描述运行现状，最后列出待确认边界。",
+      "allowed_usages": ["writing"],
+      "reuse_status": "named_reference",
+      "disclosure_mode": "named",
+      "status": "active"
+    }
+  ],
+  "metrics": [],
+  "requirements": [],
+  "runs": [],
+  "changes": []
+}
