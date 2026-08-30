@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1",
+  "adapter_id": "xinghua-halfyear-two-plant-v1",
+  "layout": "two_plant_monthly_blocks",
+  "sheet": "2026月度明细",
+  "summary_sheet": "2026年1-6月份成本",
+  "period_blocks": [
+    {"month": 1, "south_row": 4, "east_row": 5},
+    {"month": 2, "south_row": 10, "east_row": 11},
+    {"month": 3, "south_row": 16, "east_row": 17},
+    {"month": 4, "south_row": 22, "east_row": 23},
+    {"month": 5, "south_row": 28, "east_row": 29},
+    {"month": 6, "south_row": 34, "east_row": 35}
+  ],
+  "columns": {
+    "plant": "A", "total_flow_m3": "C", "design_flow_m3d": "D",
+    "load_rate": "E", "pac_raw_kg": "F", "carbon_source_usage_kg": "G",
+    "flocculant_usage_kg": "H", "hypochlorite_usage_kg": "I",
+    "tap_water_m3": "J", "sludge_t": "K", "electricity_kwh": "L", "note": "M"
+  },
+  "summary_rows": {"2025": {"south": 4, "east": 5, "total": 6}, "2026": {"south": 11, "east": 12, "total": 13}},
+  "summary_columns": {
+    "total_flow_m3": "B", "liquid_pac_usage_kg": "E", "carbon_source_usage_kg": "F",
+    "flocculant_usage_kg": "G", "hypochlorite_usage_kg": "H", "tap_water_m3": "I",
+    "sludge_t": "J", "electricity_kwh": "K", "solid_pac_usage_kg": "L"
+  }
+}
