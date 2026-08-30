@@ -1,0 +1,4 @@
+interface:
+  display_name: "现场调研报告生成"
+  short_description: "合并现场 Excel 与补充资料，生成可追溯的现状评估 Word。"
+  default_prompt: "Use $generate-survey-report to generate a traceable current-state assessment from my survey Excel and supporting documents."
